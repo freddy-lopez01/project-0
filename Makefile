@@ -7,7 +7,9 @@
 # appropriate location.
 
 install:
-	# Nothing installed
+	@(mv credentials.ini hello/)
 
-run:
+
+run: 
 	@(cd hello; python3 hello.py)
+	@(cd hello; rm credentials.ini)
